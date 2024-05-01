@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recetas - HabitLife</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Mulish', sans-serif;
+
+        }
+
+        header {
+            background-color: #000;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: #000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .banner {
+            background-image: url('imagenes/alimentacion.png');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            padding: 25px 0;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin: 40px;
+            text-align: left;
+        }
+
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 0 10px;
+            background-color: #ff5c0f;
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .menu-item:first-child {
+            margin-right: 10px;
+        }
+
+        .menu-item:nth-child(1),
+        .menu-item:nth-child(2),
+        .menu-item:nth-child(3),
+        .menu-item:nth-child(4),
+        .menu-item:nth-child(5) {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #000000;
+            text-align: center;
+        }
+
+        
+        .search-bar {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .search-input {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            background-color: #ff5c0f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            margin-left: 10px;
+
+        }
+
+        .filtro-button {
+            background-color: #ff5c0f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+
+        }
+
+        .ordenar-button {
+            background-color: #ff5c0f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        .receta-lista {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .receta {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .receta-link {
+            display: flex;
+            text-decoration: none;
+            color: #fff;
+            width: 100%;
+        }
+
+        .receta-miniatura {
+            margin-right: 10px;
+        }
+
+        .detalles-receta {
+            flex: 1;
+        }
+
+
+        .receta-titulo {
+            font-size: 30px;
+            margin: 0;
+            text-align: left;
+        }
+
+        .receta-descripcion {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            display: inline;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HabitLife</h1>
+        <nav>
+            <div class="menu-bar">
+                <a href="#" class="menu-item">Training</a>
+                <a href="malimentacion.html" class="menu-item"
+                    style="background-color: #96E500; color:  #000;">Alimentacion</a>
+                <a href="/Estudio/Estudio.html" class="menu-item">Estudio</a>
+                <a href="#" class="menu-item">Mentalidad</a>
+                <a href="/Comunidad/index.html" class="menu-item">Comunidad</a>
+                <div class="menu-item">Herramientas</div>
+                <div class="menu-item">Configuracion</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h1>RECETAS</h1>
+        </div>
+        <div class="search-bar">
+            <input class="search-input" type="text" placeholder="Search">
+            <a href="errorReceta.html"><button class="search-button">Search</button></a>
+        </div>
+        <div class="buttons">
+            <button class="filtro-button">Filtros</button>
+            <button class="ordenar-button">Ordenar por</button>
+        </div>
+
+        <div class="receta-lista">
+            <div class="receta">
+                <a class="receta-link" href="receta1.html">
+                    <img class="receta-miniatura" src="https://cdn.kiwilimon.com/brightcove/6506/6506.jpg"
+                        height="160">
+                    <div class="detalles-receta">
+                        <h3 class="receta-titulo">Ensalada Cesar de pollo</h3>
+                        <p class="receta-descripcion">Dificultad:  Fácil <br>
+                                Tiempo: 20 mins</p>
+                    </div>
+                </a>
+            </div>
+            <div class="receta">
+                <a class="receta-link" href="Recetas/receta2.html"
+                    >
+                    <img class="receta-miniatura" src="https://images.cookforyourlife.org/wp-content/uploads/2022/08/Quinoa-Risotto-Primavera.docx-e1662069981254.png"
+                        height="160">
+                    <div class="detalles-receta">
+                        <h3 class="receta-titulo">Rissoto de quinua</h3>
+                        <p class="receta-descripcion">Dificultad:  Difícil <br>
+                                Tiempo: 75 mins</p>
+                    </div>
+                </a>
+            </div>
+            <div class="receta">
+                <a class="receta-link" href="Recetas/receta3.html"
+                    >
+                    <img class="receta-miniatura" src="https://www.recetasnestlecam.com/sites/default/files/srh_recipes/b01035a8a9aa9b15fdaee7e6c8ba6217.jpg"
+                        height="160">
+                    <div class="detalles-receta">
+                        <h3 class="receta-titulo"> Pechugas de pollo rellenas de espinacas y queso manchego</h3>
+                        <p class="receta-descripcion">Dificultad:  Media <br>
+                                Tiempo: 43 mins</p>
+                    </div>
+                </a>
+            </div>
+            <div class="receta">
+                <a class="receta-link" href="Recetas/receta4.html"
+                    >
+                    <img class="receta-miniatura" src="https://elcomercio.pe/resizer/xyZdUz4xXknI4S6SevDMmgkeBLY=/1200x675/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/3VCJHMCPJFHLVL2QAZZ6UBLC4U.jpg"
+                        height="160">
+                    <div class="detalles-receta">
+                        <h3 class="receta-titulo">Pollo a la jardinera</h3>
+                        <p class="receta-descripcion">Dificultad:  Media <br>
+                                Tiempo: 50 mins</p>
+                    </div>
+                </a>
+            </div>
+            <div class="receta">
+                <a class="receta-link" href="Recetas/receta5.html"
+                    >
+                    <img class="receta-miniatura" src="https://www.clara.es/medio/2022/07/07/batidos-detox_12b259d4_1280x800.jpg"
+                        height="160">
+                    <div class="detalles-receta">
+                        <h3 class="receta-titulo">Batido detox</h3>
+                        <p class="receta-descripcion">Dificultad:  Fácil <br>
+                                Tiempo: 10 mins</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#">Acerca de</a>
+        <a href="#">Explorar</a>
+        <a href="#">Community</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+        <p>2023 HabitLife. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

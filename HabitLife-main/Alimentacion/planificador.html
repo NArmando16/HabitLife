@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitLife - Alimentación</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
+    <style>
+    body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: #000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 0 10px;
+            background-color: #ff5c0f;
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .menu-item:first-child {
+            margin-right: 10px;
+        }
+
+        .menu-item:nth-child(1),
+        .menu-item:nth-child(2),
+        .menu-item:nth-child(3),
+        .menu-item:nth-child(4),
+        .menu-item:nth-child(5) {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #000000;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .banner {
+            background-image: url('imagenes/alimentacion.png');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            padding: 25px 0;
+        }
+
+        
+        .calendario {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 50px;
+            height: 500px;
+        }
+
+        .diacont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .column {
+            flex: 0 1 14.2857%;
+            margin: 0 10px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .column h3 {
+            font-size: 20px;
+            color: #96E500;
+        }
+
+        .column p {
+            font-size: 12px;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            display: inline;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+
+        button{
+            background-color: #ff5c0f;
+            color: #fff;
+            padding: 10px 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HabitLife</h1>
+        <nav>
+            <div class="menu-bar">
+                <a href="#" class="menu-item">Training</a>
+                <a href="malimentacion.html" class="menu-item"
+                    style="background-color: #96E500; color:  #000;">Alimentacion</a>
+                <a href="/Estudio/Estudio.html" class="menu-item">Estudio</a>
+                <a href="#" class="menu-item">Mentalidad</a>
+                <a href="/Comunidad/index.html" class="menu-item">Comunidad</a>
+                <div class="menu-item">Herramientas</div>
+                <div class="menu-item">Configuracion</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Planificador</h2>
+        </section>
+        <section>
+            <div class="calendario">
+                <div class="diacont">
+                    <div class="column">
+                        <h3>Lunes</h3>
+                        <p>Contenido del lunes</p>
+                    </div>
+                </div>
+                <div class="diacont">
+                    <div class="column">
+                        <h3>Martes</h3>
+                        <p>Contenido del martes</p>
+                    </div>
+                </div>
+                <div class="diacont">
+                    <div class="column">
+                        <h3>Miércoles</h3>
+                        <p>Contenido del martes</p>
+                    </div>
+                </div>
+                <div class="diacont">
+                    <div class="column">
+                        <h3>Jueves</h3>
+                        <p>Contenido del martes</p>
+                    </div>
+                </div>
+                <div class="diacont">
+                    <div class="column">
+                        <h3>Viernes</h3>
+                        <p>Contenido del martes</p>
+                    </div>
+                </div>
+                <div class="diacont">
+                    <div class="column">
+                        <h3>Sábado</h3>
+                        <p>Contenido del martes</p>
+                    </div>
+                </div>
+                <div class="diacont">
+                    <div class="column">
+                        <h3>Domingo</h3>
+                        <p>Contenido del martes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <h3>Planificador Semanal</h3>
+                <label for="search">Buscar alimentos:</label>
+                <input type="text" id="search" name="search">
+                <button type="button">Buscar</button>
+            </div>
+            <div>
+                <form action="#" method="post">
+                    <label for="day">Selecciona un día:</label>
+                    <select id="day" name="day">
+                        <option value="lunes">Lunes</option>
+                        <option value="martes">Martes</option>
+                        <option value="miercoles">Miércoles</option>
+                        <option value="jueves">Jueves</option>
+                        <option value="viernes">Viernes</option>
+                        <option value="sabado">Sábado</option>
+                        <option value="domingo">Domingo</option>
+                    </select>
+                    <button type="button" onclick="mostrarMensajeExito()">Aceptar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">Acerca de</a>
+        <a href="#">Explorar</a>
+        <a href="#">Community</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+        <p>2023 HabitLife. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function mostrarMensajeExito() {
+            swal({
+                title: "Guardado satisfactoriamente",
+                icon: "success",
+                button: "Continuar",
+            });
+
+        }
+    </script>
+</body>
+
+</html>
+
