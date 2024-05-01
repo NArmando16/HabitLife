@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Recordatorio - HabitLife</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
+    <style>
+         body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: #000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .banner {
+            background-image: url('imagenes/reloj.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            padding: 25px 0;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin: 40px;
+            text-align: left;
+        }
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 0 10px;
+            background-color: #ff5c0f;
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .menu-item:first-child {
+            margin-right: 10px;
+        }
+
+        .menu-item:nth-child(1),
+        .menu-item:nth-child(2),
+        .menu-item:nth-child(3),
+        .menu-item:nth-child(4),
+        .menu-item:nth-child(5) {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        .registro-recordatorio {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #000;
+            text-align: left;
+        }
+
+        .registro-recordatorio label {
+            font-size: 18px;
+        }
+
+        .registro-recordatorio input[type="text"],
+        .registro-recordatorio input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            background-color: #ff5c0f;
+            color: #fff;
+            padding: 10px 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .mensaje-exito {
+            background-color: #009900;
+            color: #fff;
+            text-align: center;
+            display: none; 
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            display: inline;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HabitLife</h1>
+        <nav>
+            <div class="menu-bar">
+                <a href="#" class="menu-item">Training</a>
+                <a href="/Alimentacion/malimentacion.html" class="menu-item">Alimentacion</a>
+                <a href="Estudio.html" class="menu-item"
+                style="background-color: #96E500; color:  #000;">Estudio</a>
+                <a href="#" class="menu-item">Mentalidad</a>
+                <a href="/Comunidad/index.html" class="menu-item">Comunidad</a>
+                <div class="menu-item">Herramientas</div>
+                <div class="menu-item">Configuracion</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="banner">
+            <h1>RECORDATORIOS</h1>
+        </div>
+
+            </div>
+            <button type="guardar" class="search-button" >Crear nueva notificación</button>
+            <button type="guardar" class="search-button" >Editar notificación</button>
+
+        <div class="registro-recordatorio">
+            <form>
+                <div class="grupo">
+                    <label>Nombre de la notificación</label>
+                    <input type="text" id="alimento" placeholder="Ej. Ir al parque">
+                </div>
+                <div class="grupo">
+                    <label>Hora</label>
+                    <input type="text" id="cantidad" placeholder="Ej. 16:00">
+                </div>
+                <div class="grupo">
+                    <label>Fecha</label>
+                    <input type="date" id="fecha" >
+                </div>
+                <button type="guardar" class="search-button" onclick="mostrarMensajeExito()">Confirmar</button>
+                <button type="guardar" class="search-button" >Omitir</button>
+                <button type="guardar" class="search-button" >Cancelar</button>
+                
+            </form>
+        </div>
+        <div class="mensaje-exito">
+            ¡Registro guardado con éxito!
+        </div>
+    </main>
+    <footer>
+        <a href="#">Acerca de</a>
+        <a href="#">Explorar</a>
+        <a href="#">Community</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+        <p>2023 HabitLife. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarMensajeExito() {
+        }
+    </script>
+</body>
+
+</html>

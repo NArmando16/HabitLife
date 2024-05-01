@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitLife</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
+    <link rel="stylesheet" href="css/misestilos.css" type="text/css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Mulish', sans-serif;
+        }
+
+
+        header {
+            background-color: #000;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        #encabezado {
+            text-align: left;
+            background-color: rgba(255,255,255,.3);
+            background-image: url('images/bicicleta.jpg');
+            background-size: cover;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        #encabezado h2 {
+            font-size: 35px;
+            color: #fff;
+            padding: 40px 0;
+            margin-left: 30px;
+        }
+
+        #encabezado a {
+            background-color: #96E500;
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        #encabezado p {
+            font-size: 15px;
+            color: #fff;
+            padding: 40px 0;
+            margin-left: 30px;
+        }
+
+        #encabezado .opciones {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+        list-style: none; /* Elimina las viñetas de la lista */
+        }
+
+        li {
+        margin: 10px 0;
+        }
+
+        input[type="checkbox"] {
+        display: none; /* Oculta el checkbox nativo */
+        }
+
+        label.checkbox-label {
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+        }
+
+        label.checkbox-label::before {
+            content: " "; /* Espacio en blanco para el pseudo-elemento */
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 255, 255); /* Color del cuadro cuando no está marcado */
+            border: 1px solid #888;
+            position: absolute;
+            left: 0;
+            top: 1px;
+        }
+
+        input[type="checkbox"]:checked + label.checkbox-label::before {
+            background-color: green; /* Cambia el color del cuadro cuando se marca */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo habit life.png" height="50" style="margin-left: 20px;">
+        <i class="fas fa-search search-icon"></i>
+        <nav>
+            <div class="menu-bar">
+                <div class="menu-bar">
+                   
+                    <a href="javascript:window.history.back()" class="Salir">HABITLIFE
+                    </a>
+                </div>
+                <a href="Alimentacion/malimentacion.html" class="menu-item">Alimentacion</a>
+                <a href="Estudio/Estudio.html" class="menu-item">Estudio</a>
+                <a href="#" class="menu-item">Ejercicios</a>
+                <a href="Comunidad/index.html" class="menu-item">Comunidad</a>
+                <div class="menu-item">Herramientas</div>
+                <div class="menu-item">Configuracion</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="column2">
+                <section>
+                    <h1>CONOCENOS MAS</h1>
+                    <h2>Ingresas tus datos</h2>
+                    
+                    <h3>O</h3>
+                    <div class="recuadro">
+                        <form>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombres completos" required onfocus="this.placeholder=''">
+                            <input type="text" id="nombreusuario" name="nombreusuario" placeholder="Nombre " required onfocus="this.placeholder=''">
+                            <input type="text" id="email" name="email" placeholder="Correo electrónico" required onfocus="this.placeholder=''">
+                            <input type="text" id="ASUNTO" name="ASUNTO" placeholder="ASUNTO" required onfocus="this.placeholder=''">
+                            <input type="password" id="mensaje" name="mensaje:" placeholder="Mensaje" required onfocus="this.placeholder=''">
+                        </form>
+                    </div>
+                    <a href="#">ENVIAR</a>
+                </section>
+            </div>
+            
+        </div>
+    </main>
+    <footer>    
+        <img src="images/logo habit life.png" height="30" style="margin-right: 20px; margin-top: 40px;">
+        <a href="#">Acerca de</a>
+        <a href="#">Explorar</a>
+        <a href="#">Community</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+        <p>@2023 HabitLife. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
+

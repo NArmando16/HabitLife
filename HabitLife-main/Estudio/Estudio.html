@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitLife - Estudio</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="css/mis-estilos.css" type="text/css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: #000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 0 10px;
+            background-color: #ff5c0f;
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .menu-item:first-child {
+            margin-right: 10px;
+        }
+
+        .menu-item:nth-child(1),
+        .menu-item:nth-child(2),
+        .menu-item:nth-child(3),
+        .menu-item:nth-child(4),
+        .menu-item:nth-child(5) {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #000000;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        #frase {
+            text-align: left;
+            background-image: url('imagenes/estudio.jpg');
+            background-size: cover;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        #frase h2 {
+            font-size: 50px;
+            color: #fff;
+            background-color: transparent;
+            padding: 40px 0;
+            margin-left: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .column {
+            flex: 0 1 calc(33.333% - 20px);
+            padding: 10px;
+        }
+
+        .column h3 {
+            font-size: 20px;
+            text-align: center;
+            color: #96E500;
+        }
+
+        .column p {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .column a {
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            display: inline;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HabitLife</h1>
+        <nav>
+            <div class="menu-bar">
+                <div class="menu-bar">
+                   
+                    <a href="javascript:window.history.back()" class="Salir">HABITLIFE
+                    </a>
+                </div>
+                <a href="/Alimentacion/malimentacion.html" class="menu-item">Alimentacion</a>
+                <a href="Estudio.html" class="menu-item"
+                style="background-color: #96E500; color:  #000;">Estudio</a>
+                <a href="#" class="menu-item">Ejercicios</a>
+                <a href="/Comunidad/index.html" class="menu-item">Comunidad</a>
+                <div class="menu-item">Herramientas</div>
+                <div class="menu-item">Configuracion</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="frase">
+            <h2>Estudio</h2>
+            <a href="#"></a>
+        </section>
+        <div class="container">
+            <div class="reto" style="background-color: #96E500; padding: 30px;">
+                <a href="avance-ac.html" class="menu-item"> <h3>Tareas diarias</h3></a>
+                <p>Tarea 1</p>
+                <p>Tarea 2</p>
+                <p>Tarea 3</p>
+                <p>Tarea 4</p>
+                </section>
+            </div>
+                <section id="puntuacion">
+                    <a href="Planificador.html" class="menu-item"> <h3>Planificador</h3></a>
+                        <img src="imagenes/calendario.jpg" height="180">
+                </section>
+            </div>
+
+            </div>
+                <div class="reto" style="background-color: #000000; padding: 30px;">
+
+                </section>
+            </div>
+            
+        </section>
+        <div class="container">
+            <div class="seccionizq">
+                <section id="puntuacion">
+                    <a href="avance-ac.html" class="menu-item"> <h3>Avance Académico</h3></a>
+                    <div class="reto" style="background-color: #96E500; padding: 20px;">
+                    <p>Examen 1</p>
+                <div class="reto" style="background-color: #000000; padding: 20px;">
+                <p>Examen Final</p>
+
+                </section>
+            </div>
+
+            <div class="seccionizq">
+                <section id="puntuacion">
+                    <a href="Recordatorios.html" class="menu-item"> <h3>Recordatorios</h3></a>
+                    
+                    <p>No olvidar hacer la practica bio...</p>
+                    <p>Tarea para mañana</p>
+                    <p>Estudiar ppt mate</p>
+                </section>
+            </div>
+
+            <div class="reto" style="background-color: #96E500; padding: 20px;">
+                <a href="Recursos Educativos.html" class="menu-item"> <h3>Recursos educativos y tutoriales</h3></a>
+                <div class="image-links">
+                    <div class="trend-item">
+                        <a href="https://www.youtube.com/watch?v=U7onW7mMzLM"
+                            target="_blank">
+                            <img src="imagenes/video1.png" height="70">
+                        </a>
+                        <p>Derivada de una función usando la definición | Ejemplo 1</p>
+                    </div>
+                    <div class="trend-item">
+                        <a href="https://www.youtube.com/watch?v=Bnlp1EWDqdU"
+                            target="_blank">
+                            <img src="imagenes/video2.png" height="70">
+                        </a>
+                        <p>Las 10 mejores TÉCNICAS de ESTUDIO</p>
+                    </div>
+                    <div class="trend-item">
+                        <a href="https://www.youtube.com/watch?v=SnWGwITaW-k"
+                            target="_blank">
+                            <img src="imagenes/video3.png" height="70">
+                        </a>
+                        <p>Cómo ORGANIZAR tu TIEMPO para ESTUDIAR </p>
+                    </div>
+                </div>
+                </section>
+            </div>
+
+  
+        </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <a href="#">Acerca de</a>
+        <a href="#">Explorar</a>
+        <a href="#">Community</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+        <p>2023 HabitLife. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

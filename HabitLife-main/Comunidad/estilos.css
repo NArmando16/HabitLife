@@ -1,0 +1,593 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+/*HEADER DE LA PAGINA*/
+header{
+    background-color: rgb(22, 20, 20);
+    display: flex;
+    height: 2cm;
+    margin-bottom: 5px;
+    padding-left: 2cm;
+    width: 100%;
+    /*--------------------------------------------------------------------------------------------------------------*/
+    position: fixed;
+    top: 0cm;
+}
+
+.HABITLIFE{
+    color: greenyellow;
+}
+
+.community{
+    color: orange;
+}
+
+.navBarHeader{
+    margin-left: 8cm;
+    /*border: 2px solid rgb(17, 13, 13);*/
+    padding-top: 30px;
+}
+
+.divBarHeade{
+    text-align: center;
+}
+
+.aBarHeader{
+    margin-left: 1cm;
+    margin-right: 1cm;
+    text-decoration: none;
+    color: greenyellow;
+}
+
+
+
+
+
+
+
+
+/*MAIN DE LA PAGINA*/
+main{
+    display: flex;
+}
+
+/*1era Columna*/
+/*---------------*/
+.div1Columna{
+    background-color: rgb(22, 20, 20);
+    width: 20%;
+    padding: 5px;
+    /*--------------------------------------------------------------------------------------------------------------*/
+    position: fixed;
+    top: 2.2cm;
+    font-size: 0.5cm;
+}
+
+.navBarColumna1{
+    margin: 0.1px;
+}
+
+.divBarColumna1{
+    display: flex;
+    flex-direction: column;
+}
+
+.aBarColumna1{
+    margin-top: 17px;
+    margin-bottom: 10px;
+    margin-left: 2cm;
+    text-decoration: none;
+    color: orange;
+}
+
+.Inicio{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 3cm;
+}
+
+.Notificaciones{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 1.6cm;
+}
+
+.Recordatorios{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 1.7cm;
+}
+
+.Blogs{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 3.3cm;
+}
+
+.Foros{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 3.3cm;
+}
+
+.Tienda{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 3.1cm;
+}
+
+.Directos{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 2.8cm;
+}
+
+.Salir{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 3cm;
+}
+
+
+/*---------------*/
+.divRetosDia{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 1cm;
+}
+
+.RetosDia{
+    color: greenyellow;
+}
+
+.divImagenRetos{
+    height: 5cm;
+    width: 5cm;
+    padding-left: 2.5cm;
+}
+
+.ImagenRetos{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---------------*/
+.divBarAyuda{
+    display: flex;
+    flex-direction: column;
+}
+
+.aBarAyuda{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: orange;
+}
+
+
+
+
+
+
+/*parte central*/
+/*---------------*/
+.divParteCentral{
+    overflow-y: hidden;
+    width: 60%;
+    margin: 5px;
+    /*border: 2px solid white;*/
+    /*--------------------------------------------------------------------------------------------------------------*/
+    position: absolute;
+    left: 10cm;
+    top: 2.2cm;
+    z-index: -1;
+}
+
+.divBusqueda{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    margin-top: 10px;
+    margin-left: 4cm;
+    margin-right: 4cm;
+}
+
+
+.divImagenBusqueda{
+    width: 25px;
+    height: 25px;
+}
+
+.Lupa{
+    width: 100%;
+    height: 100%;
+}
+
+.divBuscador{
+    margin-left: 50px;
+}
+
+.inputBuscador{
+    background-color: rgb(0, 0, 0);
+    width: 17cm;
+    color: orange;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+
+/*---------------*/
+.divHabitos{
+    background-color: rgb(24, 22, 22);
+    margin-left: 3cm;
+    margin-right: 3cm;
+}
+
+.divPalabraHabitos{
+    margin-left: 3cm;
+}
+
+.Habitos{
+    color: greenyellow;
+}
+
+
+.navBarImagenes{
+    margin: 5px;
+}
+
+.divBarImagenes{
+    display: flex;
+}
+
+.contenedorImagen{
+    margin-right: 30px;
+    width: 4cm;
+    height: 4cm;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.ImgHistoria1{
+    width: 100%;
+    height: 100%;
+}
+
+
+.navBarNombres{
+    margin: 5px;
+}
+
+.divBarNombres{
+    display: flex;
+    margin: 10px;
+}
+
+.Nombres1{
+    color: orange;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.Nombres2 {
+    color: orange;
+    text-decoration: none;
+    margin-left: 2.3cm;
+}
+.Nombres3 {
+    color: orange;
+    text-decoration: none;
+    margin-left: 2.5cm;
+}
+.Nombres4 {
+    color: orange;
+    text-decoration: none;
+    margin-left: 2.6cm;
+}
+.Nombres5 {
+    color: orange;
+    text-decoration: none;
+    margin-left: 2.3cm;
+}
+
+
+/*------------------------*/
+.divContenido{
+    background-color: rgb(12, 12, 12);
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-top: 1cm;
+    min-height: 8cm;
+}
+
+.divContenido1{
+    margin-left: 5px;
+    margin-right: 5px;
+    min-height: 8cm;
+}
+
+.divPerfilContenido1{
+    display: flex;
+}
+
+.divImagenPCont{
+    height: 60px;
+    width: 60px;
+    border: 3px solid grey;
+    border-radius: 30px;
+}
+
+.ImgPContenido1{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.divNombrePerfilCont{
+    margin-left: 1cm;
+}
+
+.aNombrePerfilConte{
+    text-decoration: none;
+}
+
+.h2NombrePerfilC{
+    color: greenyellow;
+}
+
+.divCentralCont{
+    height: 5cm;
+    display: flex;
+    min-height: 6cm;
+}
+
+.divPostyComent{
+    background-color: rgb(16, 14, 19);
+    width: 40%;
+}
+
+.divPost{
+    background-color: rgb(22, 22, 21);
+    width: 99%;
+    min-height: 2cm;
+}
+
+.pPost{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.divComent{
+    margin: 10px;
+}
+
+.navBarImgComent{
+    margin: 0.1px;
+}
+
+.divBarImgComent{
+    display: flex;
+    width: 2cm;
+    height: 1cm;
+    margin-right: 1cm;
+}
+
+.Corazon{
+    width: 30px;
+    height: 30px;
+    margin-left: 3cm;
+    margin-right: 20px;
+}
+
+.Comentario{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+}  
+
+.Compartir{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.divInputComentario{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inputComent{
+    background-color: rgb(0, 0, 0);
+    width: 9cm;
+    color: orange;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.divImgCentralCont{
+    width: 60%;
+    height: 5.6cm;
+    padding: 5px;
+    border: 2px solid rgb(15, 10, 10);
+    border-radius: 15px;
+}
+
+.imgContenido1{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    height: 5.6cm;
+}
+
+
+
+
+
+
+
+/*2da Columna*/
+/*---------------*/
+.div2Columna{
+    background-color: rgb(22, 20, 20);
+    width: 20%;
+    padding: 5px;
+    /*--------------------------------------------------------------------------------------------------------------*/
+    position: fixed;
+    left: 40cm;
+    top: 2.2cm;
+}
+
+
+.navBarColumna2{
+    margin: 0.1px;
+}
+
+
+.divBarColumna2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aBarColumna2{
+    font-size: 0.5cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1cm;
+    text-decoration: none;
+    color: orange;
+}
+
+.divsDisplay{
+    display: flex;
+}
+
+.FotoPersonal{
+    width: 3cm;
+    height: 3cm;
+    border: 2px solid grey;
+    border-radius: 1.5cm;
+    margin-left: 2cm;
+
+}
+
+.Lapicero{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 2cm;
+}
+
+.Lentes{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 1cm;
+}
+
+.Seguidores{
+    background-color: black;
+    color: greenyellow;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 2.3cm;
+}
+
+.Seguidos{
+    background-color: black;
+    color: greenyellow;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 2.7cm;
+}
+
+.Amigos{
+    background-color: black;
+    color: greenyellow;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 3cm;
+}
+
+.Foto{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 3.6cm;
+}
+
+.Configuracion{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 1.7cm;
+}
+
+/*------------------*/
+.divBarAmigos{
+    margin-top: 5px;
+}
+
+.PConectados{
+    font-size: 0.5cm;
+    margin-left: 1cm;
+    color: greenyellow;
+}
+
+.AmigosConectados{
+    margin-top: 5px;
+}
+
+.AmigoConectado{
+    display: flex;
+}
+
+.ImgAmgCon{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 1cm;
+    border: 2px solid greenyellow;
+    border-radius: 0.5cm; 
+}
+
+.aAmigCon{
+    text-decoration: none;
+}
+
+.hNombreAmigConec{
+    color: orange;
+    margin-left: 1cm;
+}
+/*-----------------*/
+
+.divBarGrupos {
+    margin-top: 5px;
+}
+
+.PActivos {
+    font-size: 0.5cm;
+    margin-left: 1cm;
+    color: greenyellow;
+}
+
+.GruposConectados {
+    margin-top: 5px;
+}
+
+.GrupoConectado {
+    display: flex;
+}
+
+.ImgGrupCon {
+    width: 1cm;
+    height: 1cm;
+    margin-left: 1cm;
+    border: 2px solid greenyellow;
+    border-radius: 0.5cm;
+}
+
+.aGrupoCon {
+    text-decoration: none;
+}
+
+.hNombreGrupConec {
+    color: orange;
+    margin-left: 1cm;
+}

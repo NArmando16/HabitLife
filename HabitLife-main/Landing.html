@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitLife</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
+    <link rel="stylesheet" href="css/misestilos.css" type="text/css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Mulish', sans-serif;
+        }
+
+
+        header {
+            background-color: #000;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        #encabezado {
+            text-align: left;
+            background-color: rgba(255,255,255,.3);
+            background-image: url('images/bicicleta.jpg');
+            background-size: cover;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        #encabezado h2 {
+            font-size: 35px;
+            color: #fff;
+            padding: 5px 0;
+            margin-left: 40px;
+        }
+
+        #encabezado h4 {
+            font-size: 17px;
+            color: #fff;
+            margin-left: 45px;
+            font-weight: normal;
+        }
+
+        #encabezado a {
+            background-color: #96E500;
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        #encabezado p {
+            font-size: 15px;
+            color: #fff;
+            padding: 40px 0;
+            margin-left: 30px;
+        }
+
+        #encabezado .opciones {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+        list-style: none; /* Elimina las viñetas de la lista */
+        }
+
+        li {
+        margin: 10px 0;
+        }
+
+        input[type="checkbox"] {
+        display: none; /* Oculta el checkbox nativo */
+        }
+
+        label.checkbox-label {
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+        }
+
+        label.checkbox-label::before {
+            content: " "; /* Espacio en blanco para el pseudo-elemento */
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 255, 255); /* Color del cuadro cuando no está marcado */
+            border: 1px solid #888;
+            position: absolute;
+            left: 0;
+            top: 1px;
+        }
+
+        input[type="checkbox"]:checked + label.checkbox-label::before {
+            background-color: rgb(102, 150, 102); /* Cambia el color del cuadro cuando se marca */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img href="Landing.html" src="images/logo habit life.png" height="50" style="margin-left: 20px;">
+        <i class="fas fa-search search-icon"></i>
+        <nav>
+            <div class="menu-bar">
+                <a href="#" class="menu-item">HabitLife</a>
+                <a href="Alimentacion/malimentacion.html" class="menu-item">Alimentacion</a>
+                <a href="Estudio/Estudio.html" class="menu-item">Estudio</a>
+                <a href="#" class="menu-item">Ejercicios</a>
+                <a href="https://www.facebook.com/groups/954492926210624/" class="menu-item">Comunidad</a>
+                <a href="InicioSesion.html" class="menu-item">Iniciar Sesión</a>
+                <a href="Registro.html" class="menu-item">Registro</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="encabezado">
+            <h2>"Navega, Inspira y Actúa"</h2>
+            <h4>Tu viaje de transformación empieza ahora.</h4>
+            <a href="InicioSesion.html">COMIENZA AHORA</a>
+        </section>
+        <div class="container">
+                <div class="column4">
+                    <section>
+                        <h1>Nuestra Misión</h1>
+  <p>Descubre el poder transformador de los hábitos saludables con HabitLife. Nos dedicamos a simplificar y personalizar tu viaje hacia una vida más saludable, proporcionándote herramientas, consejos respaldados por la ciencia y una comunidad comprometida. Creemos que la salud va más allá de la ausencia de enfermedad, es un bienestar integral que abraza cuerpo, mente y espíritu. Únete a nosotros para establecer y consolidar hábitos adaptados a tu estilo de vida, celebrar logros juntos y construir una comunidad dedicada a la búsqueda colectiva de una vida más plena.</p>      
+                 
+                    </section>
+                </div>
+                <div class="column4">
+                    <section>
+                        <h1>Sobre los hábitos saludables</h1>
+                        <p >La adopción de hábitos saludables es fundamental para alcanzar un estilo de vida equilibrado y pleno. Integrar pequeñas rutinas diarias, como beber suficiente agua, realizar ejercicio regularmente, mantener una dieta nutritiva y asegurarse de obtener un buen descanso nocturno, puede marcar una gran diferencia en nuestra salud física y mental. Únete a nosotros en el viaje hacia una vida más saludable y descubre cómo pequeños cambios pueden tener un impacto significativo en tu bienestar general.</p>
+                        <img src="images/Sobreloshabitos.jpg" height="150" style="float: right;">
+                    
+                    </section>
+                </div>
+                <div class="column5">
+                    <section>
+                        <h1>Sobre los hábitos saludables</h1>
+                        <p style="float: left; width: 70%;">
+                            <strong>Gonzalo Benjamin Huaranga Blanco (20 años, Ciencias de la Computación):</strong> Apasionado por la tecnología e informática, experto en C++ y Python, colaborador y orientado a soluciones. <br><br>
+                            
+                            <strong>Hector Jesus Quintana Robatti (23 años, Ciencias de la Computación):</strong> Interesado en tecnología, enfocado en ciberseguridad o data science, adaptable y aficionado a videojuegos y boxeo. <br><br>
+                            
+                            <strong>Luis Flores Centeno (19 años, Ciencias de la Computación):</strong> Hábil en matemáticas y fútbol, apasionado por el software, actualmente cursando Ciencias de la Computación y motivado por la educación. <br><br>
+                            
+                            <strong>Rodrigo Alejandro Meza Polo (21 años, Ciencias de la Computación):</strong> Aficionado a la programación, informática y diseño gráfico, habilidoso en C++ y Python, organizado y colaborador. <br><br>
+                            
+                            <strong>Armando Navarro Pérez (20 años, Ciencias de la Computación):</strong> Interesado en programación, software de entretenimiento y data science, responsable y enfocado en la optimización del tiempo.
+                        </p>
+                       
+                    
+                </div>
+            
+                
+        </div>
+    </main>
+    <footer>
+        <img src="images/logo habit life.png" height="30" style="margin-right: 20px; margin-top: 40px;">
+        <a href="#">Acerca de</a>
+        <a href="https://www.facebook.com/groups/954492926210624/" class="menu-item">Comunidad</a>
+        <a href="#">Community</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+        <p>@2023 HabitLife. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

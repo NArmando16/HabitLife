@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitLife - Alimentación</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: #000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 0 10px;
+            background-color: #ff5c0f;
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .menu-item:first-child {
+            margin-right: 10px;
+        }
+
+        .menu-item:nth-child(1),
+        .menu-item:nth-child(2),
+        .menu-item:nth-child(3),
+        .menu-item:nth-child(4),
+        .menu-item:nth-child(5) {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #000000;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        #frase {
+            text-align: left;
+            background-image: url('imagenes/alimentacion.png');
+            background-size: cover;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        #frase h2 {
+            font-size: 50px;
+            color: #fff;
+            background-color: transparent;
+            padding: 40px 0;
+            margin-left: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .column {
+            flex: 0 1 calc(33.333% - 20px);
+            padding: 10px;
+        }
+
+        .column h3 {
+            font-size: 20px;
+            text-align: center;
+            color: #96E500;
+        }
+
+        .column p {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .column a {
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            display: inline;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HabitLife</h1>
+        <nav>
+            
+            <div class="menu-bar">
+                <div class="menu-bar">
+                   
+                    <a href="javascript:window.history.back()" class="Salir">HABITLIFE
+                    </a>
+                </div>
+                <a href="Alimentacion/malimentacion.html" class="menu-item" style="background-color: #96E500; color: #000;">Alimentación</a>
+                <a href="Estudio/Estudio.html" class="menu-item">Estudio</a>
+                <a href="#" class="menu-item">Ejercicios</a>
+                <a href="Comunidad/index.html" class="menu-item">Comunidad</a>
+                <div class="menu-item" onclick="mostrarHerramientas()">Herramientas</div>
+                <div class="menu-item" onclick="mostrarConfiguracion()">Configuración</div>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <section id="frase">
+            <h2>Alimentación</h2>
+        </section>
+        <div class="container">
+            <div class="column">
+                <section>
+                    <a href="planificador.html">
+                        <img src="imagenes/schedule-calendar-svgrepo-com .svg" height="70">
+                        <h3>Planificador de comidas saludables</h3>
+                    </a>
+                    <p> Aquí, encontrarás una variedad de recursos y consejos diseñados para
+                        ayudarte a crear menús diarios que promuevan tu bienestar. Desde sugerencias de recetas y listas
+                        de compras hasta consejos para mantener un equilibrio adecuado de nutrientes, esta sección te
+                        guiará en la creación de comidas deliciosas y saludables.</p>
+                </section>
+            </div>
+            <div class="column">
+                <section>
+                    <a href="registro.html">
+                        <img src="imagenes/notebook-svgrepo-com.svg" height="70">
+                        <h3> Registro de consumo de alimentos</h3>
+                    </a>
+                    <p> Se puede llevar un seguimiento detallado de los alimentos que consumen a lo
+                        largo del día, registrando información como la cantidad, tipo, y hora de ingesta.</p>
+                </section>
+            </div>
+            <div class="column">
+                <section>
+                    <a href="recetas.html">
+                        <img src="imagenes/recipe-cook-svgrepo-com.svg" height="70">
+                        <h3>Lista de recetas nutritivas</h3>
+                    </a>
+                    <p> Espacio dedicado a ofrecer una selección de platillos equilibrados y
+                        saludables que satisfacen tanto el paladar como las necesidades nutricionales. Aquí encontrarás
+                        una variedad de recetas cuidadosamente elegidas que incluyen ingredientes frescos y sabrosos,
+                        diseñadas para ayudarte a mantener un estilo de vida saludable.</p>
+                </section>
+            </div>
+            <div class="column">
+                <section>
+                    <a href="calculadora.html">
+                        <img src="imagenes/calculator-minimalistic-svgrepo-com (1).svg" height="70">
+                        <h3>Calculadora de IMC</h3>
+                    </a>
+                    <p>Con esta herramienta, puedes determinar tu IMC, que es una medida que
+                        relaciona tu peso y altura. Simplemente ingresa tus datos en la calculadora y obtendrás un valor
+                        que te indicará si te encuentras en un rango saludable de peso o si estás por encima o por
+                        debajo del mismo.</p>
+                </section>
+            </div>
+            <div class="column">
+                <section>
+                    <a href="notificaciones.html">
+                        <img src="imagenes/notifications-svgrepo-com.svg" height="70">
+                        <h3>Notificaciones para comidas</h3>
+                    </a>
+                    <p>Las notificaciones para comidas son una herramienta valiosa para mantenerse
+                        al tanto de eventos especiales, horarios de comidas, cambios en el menú y mucho más.</p>
+                </section>
+            </div>
+            <div class="column">
+                <section>
+                    <a href="videos.html">
+                        <img src="imagenes/videos-svgrepo-com.svg" height="70">
+                        <h3>Videos de recetas</h3>
+                    </a>
+                    <p>La sección de Videos de Recetas es un rincón culinario lleno de inspiración
+                        y sabores, diseñado para aquellos amantes de la cocina que buscan una experiencia visual única.
+                        Aquí, encontrarás una colección de videos cautivadores que te guiarán paso a paso a través de la
+                        preparación de deliciosas recetas.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#">Acerca de</a>
+        <a href="#">Explorar</a>
+        <a href="#">Community</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+        <p>2023 HabitLife. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

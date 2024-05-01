@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - HabitLife</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: #000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .banner {
+            background-image: url('imagenes/recursos.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #000000;
+            padding: 40px 0;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin: 40px;
+            text-align: left;
+        }
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 0 10px;
+            background-color: #ff5c0f;
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .menu-item:first-child {
+            margin-right: 10px;
+        }
+
+        .menu-item:nth-child(1),
+        .menu-item:nth-child(2),
+        .menu-item:nth-child(3),
+        .menu-item:nth-child(4),
+        .menu-item:nth-child(5) {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #000000;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .column {
+            flex: 0 1 calc(33.333% - 20px);
+            padding: 10px;
+        }
+
+        .column img {
+            height: 70px;
+        }
+
+        .column h3 {
+            font-size: 20px;
+            text-align: center;
+            color: #96E500;
+        }
+
+        .column p {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .search-bar {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .search-input {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            background-color: #ff5c0f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            margin-left: 10px;
+
+        }
+
+        .filtro-button {
+            background-color: #ff5c0f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+
+        }
+
+        .ordenar-button {
+            background-color: #ff5c0f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        .video-lista {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .video {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .video-link {
+            display: flex;
+            text-decoration: none;
+            color: #fff;
+            width: 100%;
+        }
+
+        .video-miniatura {
+            margin-right: 10px;
+        }
+
+        .detalles-video {
+            flex: 1;
+        }
+
+        .video-titulo {
+            font-size: 18px;
+            margin: 0;
+            text-align: left;
+        }
+
+        .video-descripcion {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            display: inline;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HabitLife</h1>
+        <i class="fas fa-search search-icon"></i>
+        <nav>
+            <div class="menu-bar">
+                <a href="#" class="menu-item">Training</a>
+                <a href="/Alimentacion/malimentacion.html" class="menu-item">Alimentacion</a>
+                <a href="Estudio.html" class="menu-item"
+                style="background-color: #96E500; color:  #000;">Estudio</a>
+                <a href="#" class="menu-item">Mentalidad</a>
+                <a href="/Comunidad/index.html" class="menu-item">Comunidad</a>
+                <div class="menu-item">Herramientas</div>
+                <div class="menu-item">Configuracion</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h1>VIDEOS</h1>
+        </div>
+        <div class="search-bar">
+            <input class="search-input" type="text" placeholder="Buscar...">
+            
+        </div>
+        <div class="buttons">
+            <button class="filtro-button">Historial</button>
+            <button class="ordenar-button">Favoritos</button>
+        </div>
+
+        <div class="video-lista">
+            <div class="video">
+                <a class="video-link" href="https://www.youtube.com/watch?v=U7onW7mMzLM"
+                    target="_blank">
+                    <img class="video-miniatura" src="imagenes/video1.png"
+                        height="120">
+                    <div class="detalles-video">
+                        <h3 class="video-titulo">Derivada de una función usando la definición | Ejemplo 1</h3>
+                        <p class="video-descripcion">Derivada de una función usando la definición en la que se habla 
+                            del límite y de los incrementos, dentro del curso de derivadas.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="video">
+                <a class="video-link" href="https://www.youtube.com/watch?v=12UR3qNinSE&ab_channel=LasRecetasdeLauraComidasSaludables"
+                    target="_blank">
+                    <img class="video-miniatura" src="imagenes/video2.png"
+                        height="120">
+                    <div class="detalles-video">
+                        <h3 class="video-titulo">Las 10 mejores TÉCNICAS de ESTUDIO | Carolette Martin</h3>
+                        <p class="video-descripcion">Te mostrare las 10 mejores técnicas de estudio para que no sufras
+                            más a la hora de hacer tus deberes y puedas aprender más rápido. </p>
+                    </div>
+                </a>
+            </div>
+            <div class="video">
+                <a class="video-link" href="https://www.youtube.com/watch?v=SnWGwITaW-k"
+                    target="_blank">
+                    <img class="video-miniatura" src="imagenes/video3.png"
+                        height="120">
+                    <div class="detalles-video">
+                        <h3 class="video-titulo">Cómo ORGANIZAR tu TIEMPO para ESTUDIAR (y vencer la Pereza) | Técnicas de Estudio #14</h3>
+                        <p class="video-descripcion">¿Quieres Estudiar Mejor por tu Cuenta? HOY veremos 5 Técnicas 
+                            para Organizar tu TIEMPO para Estudiar más Rápido de forma Autodidacta desde casa. ¡Esta 
+                            es la Lección #14 del Curso de Técnicas de Estudio! </p>
+                    </div>
+                </a>
+            </div>
+            <div class="video">
+                <a class="video-link" href="https://www.youtube.com/watch?v=Z_o37L2I38g"
+                    target="_blank">
+                    <img class="video-miniatura" src="imagenes/video4.png"
+                        height="120">
+                    <div class="detalles-video">
+                        <h3 class="video-titulo">COMO ESTUDIAR POR TU CUENTA: CONSEJOS PARA SER AUTODIDACTA</h3>
+                        <p class="video-descripcion">Espero que con estos consejos puedan mejorar tu manera de estudar y poder 
+                            obtener las calificaciones más altas.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="video">
+                <a class="video-link" href="https://www.youtube.com/watch?v=8iLPYo9p3I0"
+                    target="_blank">
+                    <img class="video-miniatura" src="imagenes/video5.png"
+                        height="120">
+                    <div class="detalles-video">
+                        <h3 class="video-titulo">Verbo TO BE - Domínalo de una vez por todas</h3>
+                        <p class="video-descripcion">El verbo TO BE es uno de los verbos MÁS IMPORTANTES del inglés, porque de 
+                            él salen la mayoría de las conjugaciones con las que podemos entablar conversaciones. Así que déjame 
+                            explicarte de una manera simple cómo funciona, te aseguro que con este video no tendrás que sufrir más 
+                            por no saber cómo utilizarlo. </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#">Acerca de</a>
+        <a href="#">Explorar</a>
+        <a href="#">Community</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+        <p>2023 HabitLife. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
